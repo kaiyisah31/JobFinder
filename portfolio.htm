@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html>
+<title>Job Finder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">US</a> 
+  <a href="#kaiyisah" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">KAIYISAH</a> 
+  <a href="#hannani" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HANNANI</a>
+  <a href="#amisya" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">AMISYATUL</a>
+  <a href="#najihah" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">NAJIHAH</a>
+  <a href="#khalisah" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">KHALISAH</a>
+  <a href="#insyirah" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">INSYIRAH</a>
+  <a href="#farah" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">FARAH</a>
+  <a href="#nurin" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">NURIN</a>
+  <a href="#sya" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">NASIHAH</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">JOB FINDER</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+<!-- Push down content on small screens --> 
+<div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="/Users/apple/Desktop/HTML Ass It/kaiyisah.jpg" style="width:100%" onclick="onClick(this)" alt=" NUR KAIYISAH AIIN BINTI MD KHALID ">
+      <img src="/Users/apple/Desktop/HTML Ass It/hanani.jpg" style="width:100%" onclick="onClick(this)" alt=" NUR FITRI HANNANI BINTI HAMDAN ">
+      <img src="/Users/apple/Desktop/HTML Ass It/misya.jpg" style="width:100%" onclick="onClick(this)" alt=" AMISYATUL RAUDAH BINTI AZHARI ">
+    </div>
+    <div class="w3-third">
+      <img src="/Users/apple/Desktop/HTML Ass It/najihah.jpg" style="width:100%" onclick="onClick(this)" alt=" NUR NAJIHAH BINTI RAMLI ">
+      <img src="/Users/apple/Desktop/HTML Ass It/lisa.jpg" style="width:100%" onclick="onClick(this)" alt="KHALISAH BINTI SHAMSUR RAHMAN">
+      <img src="/Users/apple/Desktop/HTML Ass It/insyirah.jpg" style="width:100%" onclick="onClick(this)" alt="NIK INSYIRAH BINTI NIK MUHAMMAD ZAWAWI">
+    </div>
+    <div class="w3-third">
+      <img src="/Users/apple/Desktop/HTML Ass It/farah.jpg" style="width:100%" onclick="onClick(this)" alt=" FARAH DIYANA BINTI MOHAMED IQBAL ">
+      <img src="/Users/apple/Desktop/HTML Ass It/nurin.jpg" style="width:100%" onclick="onClick(this)" alt="FATHIN NURIN NABILAH BT SAINI">
+      <img src="/Users/apple/Desktop/HTML Ass It/sya.jpg" style="width:100%" onclick="onClick(this)" alt="NURUL NASIHAH BINTI YAACOB">
+    </div>
+  </div>
+  
+ <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+  <!-- Kaiyisah -->
+  <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="kaiyisah">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/kaiyisah.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+            <h5>Nur Kaiyisah Aiin Binti Md Khalid</h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Financial Analyst</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Nilai, Negeri Sembilan</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>kaiyisahaiin02@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>012-754 1449</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>31 Oct 1995</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p>Communication</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Technology</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Decisiveness</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Analytical and math</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <p>Mandarin</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:45%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Fund Manager / Etiqa Insurrance Berhad</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2020 - March 2021</h6>
+          <p>Implementing a fund's investment strategy and managing its trading activities.Oversee mutual funds or pensions, manage analysts, conduct research, and make important investment decisions.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Manager / MyTown Shopping Centre </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jan 2020</h6>
+          <p>Accomplishes financial objectives by forecasting requirements, preparing an annual budget, scheduling expenditures, analyzing variances, and initiating corrective actions.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Manager / Amphawa MyTown</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - Mar 2019</h6>
+          <p>Establishes strategic goals by gathering pertinent business, financial, service, and operations information.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Putra Malaysia</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor Degree in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SMK Taman Desaminium</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @kaiyisahaiin2 </p>
+</footer>
+
+<!-- Hannani-->
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="hannani">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/hanani.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+            <h5>Nur Fitri Hannani Binti Hamdan</h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Accounting</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Seri Kembangan, Selangor</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>nurfitrihannani@gmail.com </p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>011-1237 0323</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>12 Jun 1998</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p>Communication</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Time Management</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Creativity</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Adaptability</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Accounts Clerk / ES Fashion Sdn Bhd </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2020 - March 2021</h6>
+          <p> Keeping financial records updated, preparing reports and reconciling bank statements..</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Cashier / Aeon </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2019 - Jan 2020</h6>
+          <p> Receiving payments, issuing receipts, packing items and ensuring the money transactions involved are recorded.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+         <h5 class="w3-opacity"><b> Sales Assistant / Aeon </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2019 - March 2019</h6>
+          <p> Greeting and serving customers. Other than that, involved in stock control and management and assisting shopper to find the produsts they are looking for.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Kebangsaan Malaysia</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017-2020</h6>
+          <p>Bachelor Degree in Accounting</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SMK Taman Desaminium</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2014</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @fitrihannani </p>
+</footer>
+
+<!--Amisya-->
+  <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="amisya">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/misya.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+             <h5>Amisyatul Raudah Binti Azhari </h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Accounting</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Alor Gajah, Melaka</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>amisyaaa4@gmail.com </p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>017-235 7635</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>26 Jun 1994</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p>Customer service skills
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Time Management</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Analytical thinking</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Well organized</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Accountant / Tanaca Electronics (M) Sdn Bhd</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Apr 2021</h6>
+          <p>Ensuring the accuracy of financial documents, as well as their compliance with relevant laws and regulations. Preparing and maintaining important financial reports. Preparing tax returns and ensuring that taxes are paid properly and on time</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Cashier / R&R Restoran Jejantas Ayer Keroh </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - Jan 2020</h6>
+          <p>Resolves customer issues, balances cash drawer by counting cash at beginning and end of work shift.Provides pricing information by answering questions.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Kebangsaan Malaysia</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor Degree in Accounting</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Maktab Rendah Sains Mara Alor Gajah</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @amsyaaa </p>
+</footer>
+
+<!--Najihah-->
+  <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="najihah">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/najihah.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+             <h5>Nur Najihah Binti Ramli </h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Accounting</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Kota Bharu, Kelantan</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>Najihahn049@gmail.com </p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>014-795 6325</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>3 Jan 1994</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p>Customer service skills
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Time Management</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Analytical thinking</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Well organized</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Store Manager / Watson's Personal Care Stores Sdn Bhd</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2020 - Jan 2021 </h6>
+          <p>bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Assistant Manager / UNIQLO SDN. BHD. </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2018 - Jan 2020 </h6>
+          <p>bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Malaysia Kelantan</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor's Degree in Accounting</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SMK Ismail Petra </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @njiha.ramli </p>
+</footer>
+
+<!--Khalisah-->
+
+  <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="khalisah">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/lisa.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+             <h5>Khalisah Binti Shamsur Rahman </h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>HR Manager</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Tanjong Malim, Perak</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>khalisah@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>011-2426 4729</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>21 March 1998</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p>Critical Thinking
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Detail-Oriented</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Interpersonal Communication Skills</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Well Organized</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Manager / 7 ELEVEN Pekan Tanjong Malim</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Apr 2021 </h6>
+          <p>Lead and direct the routine functions, hiring and interviewing staff, administering pay, benefits, and leave, and enforcing company policies and practices.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Cashier / 7 ELEVEN Pekan Tanjong Malim </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - Jan 2020</h6>
+          <p> Receiving payments, issuing receipts, packing items and ensuring the money transactions involved are recorded. </p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> University Putra Malaysia </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor's Degree in Human Resource</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>SMK Methodist Tanjong Malim </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @lisah_sham </p>
+</footer>
+
+<!--Insyirah-->
+  <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="insyirah">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/insyirah.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+             <h5>Nik Insyirah Binti Nik Muhammad Zawawi </h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>bla bla</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Jerteh, Terengganu</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>knickiera2106@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i> 011-3507 9338</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>20 June 1995</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p>Negotiating
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Detail-Oriented</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Interpersonal Communication Skills</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Customer Service</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Manager / Mc Donald's </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Apr 2021 </h6>
+          <p>Checking the condition of the store, monitoring the profit and loss of the premises, maintaining the cash flow</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Salesperson / Zuraini Gold Jewellery </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - March 2021</h6>
+          <p>Achieve the set daily sales targets, ensure no losses on the company, ensure customers are always satisfied with the services provided</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Salesperson / Kedai Emas Madinah</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Apr 2021 </h6>
+          <p>Sell at a reasonable price, ensure no loss in the transaction, ensure the transaction runs smoothly</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor's Degree in Islamic Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Maahad Saniah, Kelantan </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @_nikinsyirah </p>
+</footer>
+
+<!--Farah-->
+
+  <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="farah">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/farah.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+             <h5>Farah Diyana Binti Mohamed Iqbal </h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Accountant</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Shah Alam, Selangor</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>diyanafarah02@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i> 016-287 5274</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>18 March 1998</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p>Communication
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Detail-Oriented</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Interpersonal Communication Skills</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Analitycal and Math</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Manager / Jaya Grocer</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2020 - Jul 2020 </h6>
+          <p>make sure the service at the store is tip top and the workers are doing their job without procrastinating </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Preschool Teacher /  Real Education </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2019 - March 2021</h6>
+          <p>teaching,having fun together with the students so that they have a fun environment at school</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Salesperson / Watson's Personal Care Stores Sdn Bhd</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018 - Nov 2019</h6>
+          <p>Resolves customer issues, balances cash drawer by counting cash at beginning and end of work shift.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container"> 
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor's Degree in Accounting</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> [sila isi] </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @farah_diyana02 </p>
+</footer>
+
+<!--Nurin-->
+
+  <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="nurin">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/nurin.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+             <h5>Fathin Nurin Nabilah Binti Saini </h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Financial Manager</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Pasir Gudang, Johor</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>fathinnurin20@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i> 011-1666 1640</p>
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>20 Oct 1999</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p> Customer Service
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Detail-Oriented</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Interpersonal Communication Skills</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Analitycal and Math</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Assistant Manager / Pasarayaku Hypermarket</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i> March 2019 until Apr 2021 </h6>
+          <p>bla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bla</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Financial Manager / Guardian Personal Care Store</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2017 - Jan 2019 </h6>
+          <p>Responsible for the financial health of an organization.Produce financial reports, direct investment activities, and develop strategies and plans for the long-term financial goals of their organization.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Malaya </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor's Degree in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Sekolah Menengah Sains Tengku Mohd Faris Petra </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @nruxin </p>
+</footer>
+
+<!--Sya-->
+ 
+ <!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-center w3-text-light-grey w3-padding-32" id="sya">
+    
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/Users/apple/Desktop/HTML Ass It/sya.jpg" style="width:75%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-purple">
+             <h5>Nurul Nasihah Binti Yacoob </h5>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Finance</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>Setapak, Kuala Lumpur</p>
+          <p><i class="fa fa-envelope fa-fw  w3-large w3-text-purple amethyst"></i>nurulnasihah23@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i> 016-924 7629</p> 
+          <p><i class="fa fa-female fa-fw w3-margin-right w3-large w3-text-purple amethyst"></i>26 June 1994</p>
+          <hr>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple amethyst"></i>Skills</b></p>
+          <p> Customer Service
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:90%">90%</div>
+          </div>
+          <p>Detail-Oriented</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:80%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Interpersonal Communication Skills</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:75%">75%</div>
+          </div>
+          <p>Analitycal Thinking</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple amethyst" style="width:50%">65%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-purple amethyst"></i>Languages</b></p>
+          <p>Malay</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:100%"></div>
+          </div>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-purple amethyst" style="height:24px;width:80%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+ <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Financial Adviser / Panas Electronics Sdn Bhd</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Jan 2019 until March 2021 </h6>
+          <p>Provides financial advice or guidance to customers for compensation</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Assistant Manager /R&R Restoran Jejantas Ayer Keroh </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2019 - Jan 2020 </h6>
+          <p>Assisting the manager in organizing, planning and implementing strategy. Coordinating retail store operations.
+Ensuring store schedules and objectives are met by employees</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple amethyst"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Universiti Teknologi Mara </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2018</h6>
+          <p>Bachelor's Degree in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University Sultan Zainal Abidin</b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Diploma in Finance</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> SMK Setapak Indah. Setapak KL </b></h5>
+          <h6 class="w3-text-purple amethyst"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008 - 2012</h6>
+          <p>High School Education</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-purple amethyst w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <p> @syhah_sya </p>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
+
+
